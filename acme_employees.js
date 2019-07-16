@@ -51,7 +51,7 @@ const findManagementChainForEmployee = (employeeRec, arr) => {
   let chain = [];
 
   if(!(employeeRec.managerId)){
-
+    return chain;
   } else {
     employeeRec = findManagerFor(employeeRec,arr)
     // console.log(employeeRec);
@@ -63,7 +63,7 @@ const findManagementChainForEmployee = (employeeRec, arr) => {
     //   name: employeeRec.name}]
 
   }
-  return chain;
+  
 }
 
 spacer('findEmployeeByName Moe')
